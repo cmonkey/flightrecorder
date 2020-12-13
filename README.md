@@ -10,3 +10,8 @@ spring boot 使用jfr 功能，必须按照FlightRecorderApplication main method
 
 open the record.jfr file with jmc
 
+## run DBB
+```
+env -u JDK_JAVA_OPTIONS java -XX:NativeMemoryTracking=summary \                  
+src/main/java/org/excavator/boot/flightrecorder/DBB.java 20 100     
+```
